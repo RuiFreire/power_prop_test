@@ -60,7 +60,7 @@ def get_values(first_value, second_value):
     
 def power_prop_test(p1=None, p2=None, n=None, sig_level=0.05, power=None, alternative = "two.sided"):
     
-    args_list = [p1, p2, n, sig_level, power, alternative]
+    args_list = [p1, p2, n, sig_level, power]
     
     sum_of_nones = 0
     
@@ -69,7 +69,11 @@ def power_prop_test(p1=None, p2=None, n=None, sig_level=0.05, power=None, altern
             sum_of_nones += 1
             
     if sum_of_nones != 1:
-        print("Exactly one of 'n', 'p1', 'p2', 'power', and 'alpha' must be NULL")
+        print("Exactly one of 'n', 'p1', 'p2', 'power', and 'sig_level' must be None")
+        return None
+    
+    if alternative != "two.sided" and alternative != "one.sided":
+        print("""arg alternative must be "two.sided" or "one.sided" """)
         return None
         
     if alternative == "two.sided" and sig_level != None:
@@ -84,7 +88,7 @@ def power_prop_test(p1=None, p2=None, n=None, sig_level=0.05, power=None, altern
         
         x = Symbol('x')
         
-        p1_first_value = solve( x-p2 + Zalpha*( ((x + p2) / 2)*( 1 - ((x + p2) / 2) )*(2/n) )**(1/2) + Zbeta*( (x*(1-x) + p2*(1-p2))/n )**(1/2), x)[0]   
+        p1_first_value = solve( x-p2 + Zalpha*( (x + p2)*( 1 - ((x + p2) / 2) )*(1/n) )**(1/2) + Zbeta*( (x*(1-x) + p2*(1-p2))/n )**(1/2), x)[0]   
         print(p1_first_value)        
             
         Zalpha = norm.ppf(alpha)
@@ -92,7 +96,7 @@ def power_prop_test(p1=None, p2=None, n=None, sig_level=0.05, power=None, altern
         
         x = Symbol('x')
         
-        p1_second_value = solve( x-p2 + Zalpha*( ((x + p2) / 2)*( 1 - ((x + p2) / 2) )*(2/n) )**(1/2) + Zbeta*( (x*(1-x) + p2*(1-p2))/n )**(1/2), x)[0]   
+        p1_second_value = solve( x-p2 + Zalpha*( (x + p2)*( 1 - ((x + p2) / 2) )*(1/n) )**(1/2) + Zbeta*( (x*(1-x) + p2*(1-p2))/n )**(1/2), x)[0]   
         print(p1_second_value)
         
         p1_values = get_values(p1_first_value, p1_second_value)
@@ -109,21 +113,21 @@ def power_prop_test(p1=None, p2=None, n=None, sig_level=0.05, power=None, altern
         
         x = Symbol('x')
         
-        p2_first_value = solve( p1-x + Zalpha*( ((p1 + x) / 2)*( 1 - ((p1 + x) / 2) )*(2/n) )**(1/2) + Zbeta*( (p1*(1-p1) + x*(1-x))/n )**(1/2), x)[0]    
+        p2_first_value = solve( p1-x + Zalpha*( (p1 + x)*( 1 - ((p1 + x) / 2) )*(1/n) )**(1/2) + Zbeta*( (p1*(1-p1) + x*(1-x))/n )**(1/2), x)[0]    
                 
         Zalpha = norm.ppf(alpha)
         Zbeta = norm.ppf(1-power)
         
         x = Symbol('x')
         
-        p2_second_values = solve( p1-x + Zalpha*( ((p1 + x) / 2)*( 1 - ((p1 + x) / 2) )*(2/n) )**(1/2) + Zbeta*( (p1*(1-p1) + x*(1-x))/n )**(1/2), x)[0]    
-    
+        p2_second_value = solve( p1-x + Zalpha*( (p1 + x)*( 1 - ((p1 + x) / 2) )*(1/n) )**(1/2) + Zbeta*( (p1*(1-p1) + x*(1-x))/n )**(1/2), x)[0]    
+       
         p2_values = get_values(p2_first_value, p2_second_value)
         
         if len(p2_values) == 2:
-            print("p2 = {} or p2 = {}".format(p1_values[0], p1_values[1]) )
+            print("p2 = {} or p2 = {}".format(p2_values[0], p2_values[1]) )
         else:
-            print("p2 = {}".format(p1_values[0]) )
+            print("p2 = {}".format(p2_values[0]) )
            
          
     if n == None:
@@ -179,4 +183,5 @@ def power_prop_test(p1=None, p2=None, n=None, sig_level=0.05, power=None, altern
     print("sig_level = {}".format(sig_level))
     print("power = {}".format(power))
     print("alternative = "+ alternative)
-                 
+    print("\n")
+    print("NOTE: n is the sample size in *each* group")
