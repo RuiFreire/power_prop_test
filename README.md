@@ -32,5 +32,5 @@ Once equations (1) and (2) are equal, we then have:
 <br>
 ![](images/CodeCogsEqn8.gif)
 <br>
-The above equation can be solved in order to calculate any parameter in function of the others.
+The above equation can be solved in order to calculate any variable in function of the others.
 The results are very similiar with the ones obtained using R power.prop.test {stats} function.
