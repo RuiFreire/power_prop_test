@@ -21,12 +21,12 @@ We have:
 <br>
 and
 <br>
-![](images/CodeCogsEqn5.gif)>
+![](images/CodeCogsEqn5.gif)
 <br>
 Once equations (1) and (2) are equal, we then have:
 <br>
 <br>
-![](images/CodeCogsEqn6.gif)>
+![](images/CodeCogsEqn6.gif)
 <br>
 ![](images/CodeCogsEqn7.gif)
 <br>
