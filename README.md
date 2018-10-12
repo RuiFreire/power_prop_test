@@ -8,9 +8,12 @@ if:
 ![](http://latex.codecogs.com/gif.latex?n_1%20%3D%20n_2%20%3D%20n)
 <br>
 then:
+<br>
 ![](http://latex.codecogs.com/gif.latex?p_o%20%3D%20%5Cfrac%7Bp_1%20&plus;%20p_2%7D%7B2%7D)
 <br>
+<br>
 We have:
+<br>
 ![](http://latex.codecogs.com/gif.latex?Z_c%20%3D%20p_1%20&plus;%20Z_%5Calpha%5Csqrt%7B%20p_o%281%20-%20p_o%29%20*%20%282/n%29%20%7D%20%3D%20p_1%20&plus;%20Z_%5Calpha%5Csqrt%7B%20%5Cfrac%7Bp_1%20&plus;%20p_2%7D%7B2%7D%281%20-%20%5Cfrac%7Bp_1%20&plus;%20p_2%7D%7B2%7D%20%29%20*%20%5Cfrac%7B2%7D%7Bn%7D%7D%20%281%29)
 <br>
 and
