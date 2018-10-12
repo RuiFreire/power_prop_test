@@ -7,28 +7,27 @@ Function to compute the power or other parameters of a two-samples test for prop
 <br>
 if:
 <br>
-![](http://latex.codecogs.com/gif.latex?n_1%20%3D%20n_2%20%3D%20n)
+![](images/CodeCogsEqn2.gif)
 <br>
 <br>
 then:
 <br>
-![](http://latex.codecogs.com/gif.latex?p_o%20%3D%20%5Cfrac%7Bp_1%20&plus;%20p_2%7D%7B2%7D)
+![](images/CodeCogsEqn3.gif)
 <br>
 <br>
 We have:
 <br>
-![](http://latex.codecogs.com/gif.latex?Z_c%20%3D%20p_1%20&plus;%20Z_%5Calpha%5Csqrt%7B%20p_o%281%20-%20p_o%29%20*%20%282/n%29%20%7D%20%3D%20p_1%20&plus;%20Z_%5Calpha%5Csqrt%7B%20%5Cfrac%7Bp_1%20&plus;%20p_2%7D%7B2%7D%281%20-%20%5Cfrac%7Bp_1%20&plus;%20p_2%7D%7B2%7D%20%29%20*%20%5Cfrac%7B2%7D%7Bn%7D%7D%20%281%29)
+![](images/CodeCogsEqn4.gif)
 <br>
 and
 <br>
-![](http://latex.codecogs.com/gif.latex?Z_c%20%3D%20p_2%20-%20Z_%5Cbeta%5Csqrt%7B%20%5Cfrac%7Bp_1%281%20-%20p_1%29%7D%7Bn%7D%20&plus;%20%5Cfrac%7Bp_2%281%20-%20p_2%29%7D%7Bn%7D%20%7D%20%3D%20p_2%20-%20Z_%5Cbeta%5Csqrt%7B%20%28%20p_1%281%20-%20p_1%29%20&plus;%20p_2%281%20-%20p_2%29%20%29%20%5Cfrac%7B1%7D%7Bn%7D%20%7D%20%282%29)
-<br>
+![](images/CodeCogsEqn5.gif)>
 <br>
 Once equations (1) and (2) are equal, we then have:
 <br>
 <br>
-![](http://latex.codecogs.com/gif.latex?p_1%20&plus;%20Z_%5Calpha%5Csqrt%7B%20%5Cfrac%7Bp_1%20&plus;%20p_2%7D%7B2%7D%281%20-%20%5Cfrac%7Bp_1%20&plus;%20p_2%7D%7B2%7D%20%29%20*%20%5Cfrac%7B2%7D%7Bn%7D%7D%20%3D%20p_2%20-%20Z_%5Cbeta%5Csqrt%7B%20%28%20p_1%281%20-%20p_1%29%20&plus;%20p_2%281%20-%20p_2%29%20%29%20%5Cfrac%7B1%7D%7Bn%7D%20%7D%5Cequiv)
+![](images/CodeCogsEqn6.gif)>
 <br>
-![](http://latex.codecogs.com/gif.latex?%5Cequiv%20p_1%20-%20p2%20&plus;%20Z_%5Calpha%5Csqrt%7B%20%5Cfrac%7Bp_1%20&plus;%20p_2%7D%7B2%7D%281%20-%20%5Cfrac%7Bp_1%20&plus;%20p_2%7D%7B2%7D%20%29%20*%20%5Cfrac%7B2%7D%7Bn%7D%7D%20&plus;%20Z_%5Cbeta%5Csqrt%7B%20%28%20p_1%281%20-%20p_1%29%20&plus;%20p_2%281%20-%20p_2%29%20%29%20%5Cfrac%7B1%7D%7Bn%7D%20%7D%20%3D)
+![](images/CodeCogsEqn7.gif)
 <br>
-![](http://latex.codecogs.com/gif.latex?%3D0)
+![](images/CodeCogsEqn8.gif)
