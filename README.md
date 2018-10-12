@@ -31,3 +31,6 @@ Once equations (1) and (2) are equal, we then have:
 ![](images/CodeCogsEqn7.gif)
 <br>
 ![](images/CodeCogsEqn8.gif)
+<br>
+The above equation can be solve in order to calculate any parameter in function of the others.
+The results are very similiar with the ones obtained using R power.prop.test {stats} function.
