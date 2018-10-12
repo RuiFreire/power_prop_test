@@ -21,4 +21,11 @@ and
 <br>
 ![](http://latex.codecogs.com/gif.latex?Z_c%20%3D%20p_2%20-%20Z_%5Cbeta%5Csqrt%7B%20%5Cfrac%7Bp_1%281%20-%20p_1%29%7D%7Bn%7D%20&plus;%20%5Cfrac%7Bp_2%281%20-%20p_2%29%7D%7Bn%7D%20%7D%20%3D%20p_2%20-%20Z_%5Cbeta%5Csqrt%7B%20%28%20p_1%281%20-%20p_1%29%20&plus;%20p_2%281%20-%20p_2%29%20%29%20%5Cfrac%7B1%7D%7Bn%7D%20%7D%20%282%29)
 <br>
-
+<br>
+Once equations (1) and (2) are equal, we then have:
+<br>
+![](http://latex.codecogs.com/gif.latex?p_1%20&plus;%20Z_%5Calpha%5Csqrt%7B%20%5Cfrac%7Bp_1%20&plus;%20p_2%7D%7B2%7D%281%20-%20%5Cfrac%7Bp_1%20&plus;%20p_2%7D%7B2%7D%20%29%20*%20%5Cfrac%7B2%7D%7Bn%7D%7D%20%3D%20p_2%20-%20Z_%5Cbeta%5Csqrt%7B%20%28%20p_1%281%20-%20p_1%29%20&plus;%20p_2%281%20-%20p_2%29%20%29%20%5Cfrac%7B1%7D%7Bn%7D%20%7D%5Cequiv)
+<br>
+![](http://latex.codecogs.com/gif.latex?%5Cequiv%20p_1%20-%20p2%20&plus;%20Z_%5Calpha%5Csqrt%7B%20%5Cfrac%7Bp_1%20&plus;%20p_2%7D%7B2%7D%281%20-%20%5Cfrac%7Bp_1%20&plus;%20p_2%7D%7B2%7D%20%29%20*%20%5Cfrac%7B2%7D%7Bn%7D%7D%20&plus;%20Z_%5Cbeta%5Csqrt%7B%20%28%20p_1%281%20-%20p_1%29%20&plus;%20p_2%281%20-%20p_2%29%20%29%20%5Cfrac%7B1%7D%7Bn%7D%20%7D%20%3D)
+<br>
+![](http://latex.codecogs.com/gif.latex?%3D0)
